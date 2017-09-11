@@ -1,0 +1,69 @@
+.mce-container{
+	.mce-container-body{
+		.mce-rir-image-uploader{
+			background: transparent;
+    		cursor: pointer;
+    		&:hover{
+    			.dashicons-arrow-up-alt2{
+    				color: #777;
+    			}
+    		}
+		}
+		.mce-rir-header{
+		    font-size: 14pt;
+			font-weight: bold;
+		}
+		.mce-rir-subheader{
+			font-size: 12px;
+		}
+		.dashicons{
+			font: 400 30px/1 dashicons;
+		    padding: 0 2px 0 0;
+		    vertical-align: top;
+		    speak: none;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
+		    margin-left: -2px;
+		}
+		.dashicons-no-alt{
+		    cursor: pointer;
+		    float: right;
+		    color: #a00;
+		    &:hover{
+		    	color:red;
+		    }		
+		}
+		.dashicons-arrow-up-alt2{
+			position: absolute;
+		    right: 47px;
+		    border: 2px solid;
+		    border-radius: 50%;
+		    margin: 0;
+		    padding: 0px 0px 0px 1px;
+		    font-size: 15px;
+		    top: 6px;
+		    color: #ddd;
+		    z-index: -1;
+		}
+	}	
+}
+
+.mce-toolbar{
+	.mce-btn-group{
+			.mce-rir-custom-btn{
+				i{
+					font: 400 20px/1 dashicons;
+				    padding: 0 2px 0 0;
+				    vertical-align: top;
+				    speak: none;
+				    -webkit-font-smoothing: antialiased;
+				    -moz-osx-font-smoothing: grayscale;
+				    margin-left: -2px;
+					&:before{
+						content: "\f233";
+					}
+				}
+			}
+		
+	}
+} 

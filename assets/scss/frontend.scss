@@ -1,0 +1,80 @@
+//Include SCSS Libraries
+@import "susy/susy";
+@import "breakpoint/breakpoint";
+@import "bourbon/bourbon";
+
+//Add Columns
+$susy: (
+  columns: 12,
+  gutters: 6/12,
+  gutter-position: after
+);
+
+//Breakpoints
+$ipadLand: 0px 1024px;
+$ipadPort: 0px 780px;
+$phone: 0px 600px;
+
+
+.rir-row {
+	@include container(100%);
+	@include clearfix;
+	.rir-cols-1{
+		@include span (last 12);
+		@include last;
+		margin-bottom: 2.85714%;
+	}
+	.rir-cols-2{
+		width: 100%;
+		max-width: 100%;
+		@include span (6);
+		&:last-child{
+			@include last;
+		}
+		margin-bottom: 2.85714%;
+		@include breakpoint($phone){
+			@include span (12);
+			@include last;
+		}
+	}
+	.rir-cols-3{
+		width: 100%;
+		max-width: 100%;
+		@include span (4);
+		margin-bottom: 2.85714%;
+		&:last-child{
+			@include last;
+		}
+		@include breakpoint($phone){
+			@include span (12);
+			@include last;
+		}
+	}
+	.rir-cols-4{
+		width: 100%;
+		max-width: 100%;
+		@include span (3);
+		&:last-child{
+			@include last;
+		}
+		margin-bottom: 2.85714%;
+		@include breakpoint($phone){
+			@include span (12);
+			@include last;
+		}
+	}
+
+	.rir-cols-5{
+		 width: 17.71614%;
+		 margin-right: 2.85714%;
+		 float: left;
+		 &:last-child{
+		 	margin-right: 0;
+		 }
+		 margin-bottom: 2.85714%;
+		 @include breakpoint($phone){
+			@include span (12);
+			@include last;
+		}
+	}
+}
